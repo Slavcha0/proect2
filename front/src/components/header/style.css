@@ -1,24 +1,25 @@
 header {
     display: flex;
-    background: #eee;
+    background: #b1aaaa;
     border-bottom: 1px solid #999;
     justify-content: space-between;
-    padding:10px 30px;
+    padding:5px 30px;
 }
 
 header .LogoGroup {
     display: flex;
     width: 60px;
-    gap:15px;
+    gap:60px;
 }
 
 header .LogoGroup h1 {
-    display:block;
-    width:100%;
-    font-size:12px;
+    display:flex;
+    width:200%;
+    font-size:15px;
     font-weight: bolder;
 }
 
 header .LogoGroup img {
-    max-height: 40px;
+    max-height: 50px;
+    
 }

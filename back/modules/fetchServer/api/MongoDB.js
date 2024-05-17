@@ -8,7 +8,7 @@ export default class MDB
     static #LOCATION = 'mongodb://localhost';
     static #LOGIN;
     static #PSSWD;
-    static #DBNAME = 'music';
+    static #DBNAME = 'tankwiki';
 
     constructor(collectionName = '') {
         console.log('start DB connect');
