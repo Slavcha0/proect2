@@ -79,14 +79,16 @@ export default function Index()
             <table className="simple-table">
             <thead>
                 <tr>
-                    <th>Коллекция</th>
-                    <th>Индексы</th>
-                    <th>Кол-во документов</th>
+                    <th>фильм</th>
+                    <th>дата</th>
+                    <th>жанр</th>
+                    <th>жанр</th>
                 </tr>
             </thead>
             <tbody>
                 {
-                    !loading && table.body.map(row => (
+                    // !loading && 
+                    table.body.map(row => (
                         <tr key={row._id} id={row._id}>
                             {
                             Object.values(row).map((col, index) => (
@@ -99,7 +101,7 @@ export default function Index()
             </tbody>
         </table>
 
-        <div>
+        {/* <div>
             <h3>Документы:</h3>
         <CChart
             type="doughnut"
@@ -122,9 +124,9 @@ export default function Index()
                 },
             }}
             />
-        </div>
+        </div> */}
 
-        <div>
+        {/* <div>
             <h3>Индексы:</h3>
         <CChart
             type="doughnut"
@@ -147,7 +149,7 @@ export default function Index()
                 },
             }}
             />
-        </div>
+        </div> */}
         
         </>
     )
