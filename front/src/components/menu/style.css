@@ -22,13 +22,13 @@ menu li a {
 }
 
 menu li:hover {
-    background-color: #1E88E5;
+    background-color: #8aacc9;
 }
 
 menu li.selected {
-    background: #333;
+    background: #7f7f7f;
 }
 
 menu li.selected a {
-    color:#fff;
+    color:#ffffff;
 }

@@ -1,11 +1,12 @@
 const owners = {
     _id: {},
     TITLE: {
-        type: 'String',
+        type: 'List',
         require: true,
         default: 'None',
         loc: "ФИО",
         sort: true,
+        list: [],
         editable: true,
     },
     PHONE: {

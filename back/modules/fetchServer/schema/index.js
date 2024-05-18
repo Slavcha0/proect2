@@ -5,5 +5,6 @@ import owners from "./owners.js";
 import cards from "./cards.js";
 import services from './services.js';
 import film from "./film.js";
+import serial from "./serial.js";
 
-export default {brands, menu, models, owners, cards, services, film};
+export default {brands, menu, models, owners, cards, services, film, serial};

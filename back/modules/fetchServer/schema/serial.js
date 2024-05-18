@@ -1,5 +1,4 @@
-
-const film = {
+const serial = {
     _id: {},
     TITLE: {
         type: "String",
@@ -19,12 +18,11 @@ const film = {
         editable: false,
     },
     GENRE: {
-        type: "List",
+        type: "String",
         require: true,
         default: "None",
         loc: "Жанр",
         sort: true,
-        list: ["Комедия","Драма"],
         editable: true,
 
     },
@@ -50,4 +48,4 @@ const film = {
     
 };
 
-export default film;
+export default serial;

@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import config from "../../params/config";
 import { CChart } from '@coreui/react-chartjs';
+import Menu from "../menu/Menu";
 
 export default function Index() 
 {
@@ -76,7 +77,12 @@ export default function Index()
 
     return (
         <>
-            <table className="simple-table">
+        <h1 className="text">
+            тут текст тут текст тут текст тут текст тут текст тут текст тут текст тут текст тут текст тут текст тут текст тут текст
+        </h1>
+        <Menu></Menu>
+        
+            {/* <table className="simple-table">
             <thead>
                 <tr>
                     <th>фильм</th>
@@ -99,57 +105,9 @@ export default function Index()
                     ))
                 }
             </tbody>
-        </table>
+        </table> */}
 
-        {/* <div>
-            <h3>Документы:</h3>
-        <CChart
-            type="doughnut"
-            data={{
-                labels: pie.labels,
-                datasets: [
-                {
-                    backgroundColor: getColors(pie.count),
-                    data: pie.numbers,
-                },
-                ],
-            }}
-            options={{
-                plugins: {
-                legend: {
-                    labels: {
-                    //color: getStyle('--cui-body-color'),
-                    }
-                }
-                },
-            }}
-            />
-        </div> */}
-
-        {/* <div>
-            <h3>Индексы:</h3>
-        <CChart
-            type="doughnut"
-            data={{
-                labels: pie.labels,
-                datasets: [
-                {
-                    backgroundColor: getColors(pie.count),
-                    data: pie.indexes,
-                },
-                ],
-            }}
-            options={{
-                plugins: {
-                legend: {
-                    labels: {
-                    //color: getStyle('--cui-body-color'),
-                    }
-                }
-                },
-            }}
-            />
-        </div> */}
+        
         
         </>
     )
