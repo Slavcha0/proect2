@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import config from "../../params/config";
 import { CChart } from '@coreui/react-chartjs';
 import Menu from "../menu/Menu";
+import "./style.css";
 
 export default function Index() 
 {
@@ -77,12 +78,13 @@ export default function Index()
 
     return (
         <>
-        <h1 className="text">
-            тут текст тут текст тут текст тут текст тут текст тут текст тут текст тут текст тут текст тут текст тут текст тут текст
-        </h1>
-        <Menu></Menu>
+        <div className="text">
+            <h1 >
+                Это небольшой сайт для сохранения информации о просмотренных фильмах и сериалах. Здесь вы можете оставить свою личную оценку на любое произведение, а потом советовать друзьям, основываясь на оставленных заметках.
+            </h1>
+        </div>    
         
-            {/* <table className="simple-table">
+        <Menu></Menu>    {/* <table className="simple-table">
             <thead>
                 <tr>
                     <th>фильм</th>

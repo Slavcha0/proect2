@@ -294,7 +294,7 @@ export default function Form({ nameForm, arValue = {} }) {
 
     function renderSelect(ar) {
         let list = ar.arList;
-        let value = ar.value._id;
+        let value = ar.value._id; 
 
         return (
             <>

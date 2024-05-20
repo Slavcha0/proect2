@@ -36,6 +36,7 @@ export default class Controll {
                     case "String":
                         case 'Phone':
                             case 'Email':
+                                case 'List':
                         data[i] = String(checkElement);
                     break;
 
