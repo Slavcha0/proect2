@@ -1,12 +1,12 @@
-h1  {
-    display:flex;
-    height: max-content;
-    background: #ffffff;
-    /* width: 1400px; */
-    justify-content: start;
+thead h1  {
+    
+    
+    
+    
+    
+    width: fit-content;
+    margin: 80px auto;
     text-align: center;
-    margin: 0px auto;
-    border-radius:40px;
     
 
 }

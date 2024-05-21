@@ -3,7 +3,7 @@ header {
     background: #b1aaaa;
     border-bottom: 1px solid #999;
     justify-content: space-between;
-    padding:5px 30px;
+    padding:5px 50px;
 }
 
 header .LogoGroup {
@@ -14,12 +14,13 @@ header .LogoGroup {
 
 header .LogoGroup h1 {
     display:flex;
-    width:200%;
+    width:100%;
     font-size:15px;
     font-weight: bolder;
 }
 
 header .LogoGroup img {
-    max-height: 50px;
+    max-height: 40px;
+    
     
 }

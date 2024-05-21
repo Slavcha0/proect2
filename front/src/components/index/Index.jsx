@@ -78,11 +78,11 @@ export default function Index()
 
     return (
         <>
-        <div className="text">
+        <body className="text">
             <h1 >
                 Это небольшой сайт для сохранения информации о просмотренных фильмах и сериалах. Здесь вы можете оставить свою личную оценку на любое произведение, а потом советовать друзьям, основываясь на оставленных заметках.
             </h1>
-        </div>    
+        </body>    
         
         <Menu></Menu>    {/* <table className="simple-table">
             <thead>
