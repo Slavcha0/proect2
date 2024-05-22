@@ -98,20 +98,26 @@ export default function Form({ nameForm, arValue = {} }) {
                     newRow.list = renderSelect(newRow);
                     break;
                 case "List":
-                    newRow.fieldType = 'select';
-                    newRow.field = 'simpleselect';
+                    newRow.fieldType = "select";
+                    newRow.field = "simpleselect";
                     newRow.list = renderSimpleSelect(newRow);
-                break;
+                    break;
 
                 case "Date":
                     newRow.fieldType = "date";
                     newRow.field = "date";
                     break;
 
+                case "File":
+                    newRow.fieldType = "file";
+                    newRow.field = "file";
+                    break;
+
                 case "Rating":
                     newRow.fieldType = "rating";
                     newRow.field = "rating";
                     break;
+
                 case "Rating_Overage":
                     newRow.fieldType = "rating_overage";
                     newRow.field = "rating_overage";
@@ -166,6 +172,10 @@ export default function Form({ nameForm, arValue = {} }) {
                             </>
                         )}
 
+                        {
+                            item.field === 'file' && <input name={item.code} type='file' />
+                        }
+
                         {item.field === "rating" && (
                             <>
                                 <Rating
@@ -179,12 +189,11 @@ export default function Form({ nameForm, arValue = {} }) {
                                             ...ob,
                                         }));
                                         setTimeout(Overage, 500);
-                                        ;
                                     }}
                                     itemStyles={myStyles}
                                 />
                                 <input
-                                className='stars'
+                                    className="stars"
                                     type="hidden"
                                     name={item.code}
                                     defaultValue={rating[item.code]}
@@ -201,15 +210,18 @@ export default function Form({ nameForm, arValue = {} }) {
                                 maskChar="_"
                             />
                         )}
-                        {
-                            item.field === 'simpleselect' && (
-                                <select name={item.code}>{
-                                    item.list.map((item, index) => (
-                                        <option key={index} value={item}>{item}</option>
-                                    ))
-                                }</select>
-                            )
-                        }
+                        {item.field === "simpleselect" && (
+                            <select defaultValue={0} name={item.code}>
+                                <option readOnly disabled value="0">
+                                    Выберите
+                                </option>
+                                {item.list.map((item, index) => (
+                                    <option key={index} value={item}>
+                                        {item}
+                                    </option>
+                                ))}
+                            </select>
+                        )}
 
                         {item.field === "select" && (
                             <select name={item.code}>{item.list}</select>
@@ -233,14 +245,13 @@ export default function Form({ nameForm, arValue = {} }) {
     }
 
     function renderSimpleSelect(row) {
-        console.log(schema, row)
+        console.log(schema, row);
         return schema[row.code].list;
-        
     }
 
     function Overage() {
-        let form = document.querySelector('form.editForm');
-        let arFields = form.querySelectorAll('input.stars');
+        let form = document.querySelector("form.editForm");
+        let arFields = form.querySelectorAll("input.stars");
 
         let rifma = parseInt(arFields[0].value) || 0;
         let rithmic = parseInt(arFields[1].value) || 0;
@@ -248,7 +259,7 @@ export default function Form({ nameForm, arValue = {} }) {
         let atmos = parseInt(arFields[3].value) || 0;
 
         let value = parseFloat((rifma + rithmic + ind + atmos) / 4);
-        
+
         let ob = {};
         ob.OVERAGE = value;
 
@@ -285,7 +296,6 @@ export default function Form({ nameForm, arValue = {} }) {
                             parseInt(arFields[3].value)) /
                             4
                     );
-                    
             }
 
             total.value = value;
@@ -294,7 +304,7 @@ export default function Form({ nameForm, arValue = {} }) {
 
     function renderSelect(ar) {
         let list = ar.arList;
-        let value = ar.value._id; 
+        let value = ar.value._id;
 
         return (
             <>
@@ -344,6 +354,7 @@ export default function Form({ nameForm, arValue = {} }) {
         <form
             method="POST"
             action={url}
+            encType="multipart/form-data"
             onChange={checkRequired}
             className="editForm"
         >

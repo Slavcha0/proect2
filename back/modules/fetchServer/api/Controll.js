@@ -40,6 +40,10 @@ export default class Controll {
                         data[i] = String(checkElement);
                     break;
 
+                    case "File":
+                        data[i] = checkElement;
+                    break;
+
                     case 'Date':
                         let d = checkElement.split('.');
                         data[i] = new Date(d[2], d[1]-1, d[0]);
