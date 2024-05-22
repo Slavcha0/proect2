@@ -182,7 +182,7 @@ export default class MDB
             for(let i in item) {
                 let keyElement = item[i];
 
-                if(keyElement.ref) {
+                if(keyElement && keyElement.ref) {
                     if(!simId[keyElement.collectionName])
                         simId[keyElement.collectionName] = [];
 

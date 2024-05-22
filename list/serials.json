@@ -3,30 +3,35 @@
         "TITLE": "Чернобыль",
         "YEAR": 2019,
         "GENRES": ["драма","история"],
-        "RATING": 8.8 
+        "RATING": 8.8,
+        "OPINION": "" 
     },
     {
         "TITLE": "Кухня",
         "YEAR": 2012,
         "GENRES": ["комедия"],
-        "RATING": 8.2 
+        "RATING": 8.2,
+        "OPINION": "" 
     },
     {
         "TITLE": "Шерлок",
         "YEAR": 2010,
         "GENRES": ["драма"],
-        "RATING": 8.9
+        "RATING": 8.9,
+        "OPINION": "" 
     },
     {
         "TITLE": "Реальные пацаны",
         "YEAR": 2010,
         "GENRES": ["комедия"],
-        "RATING": 6.8
+        "RATING": 6.8,
+        "OPINION": "" 
     },
     {
         "TITLE": "Космические приключения",
         "YEAR": 1996,
         "GENRES": ["фантастика","комедия"],
-        "RATING": 7.1
+        "RATING": 7.1,
+        "OPINION": "" 
     }
 ]
