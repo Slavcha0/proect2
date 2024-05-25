@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import config from "../../params/config";
 import { CChart } from '@coreui/react-chartjs';
 import Menu from "../menu/Menu";
+import NewsList from "../news/NewsList";
 import "./style.css";
 
 export default function Index() 
@@ -78,13 +79,10 @@ export default function Index()
 
     return (
         <>
-        <thead className="text">
-            <h1 >
+        <section className="description">
                 Это небольшой сайт для сохранения информации о просмотренных фильмах и сериалах. Здесь вы можете оставить свою личную оценку на любое произведение, а потом советовать друзьям, основываясь на оставленных заметках.
-            </h1>
-        </thead>    
-        
-        <Menu></Menu>    {/* <table className="simple-table">
+        </section>    
+            {/* <table className="simple-table">
             <thead>
                 <tr>
                     <th>фильм</th>
@@ -109,7 +107,7 @@ export default function Index()
             </tbody>
         </table> */}
 
-        
+        <NewsList></NewsList>
         
         </>
     )

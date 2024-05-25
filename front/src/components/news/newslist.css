@@ -1,0 +1,36 @@
+.film-list {
+    width:1200px;
+    margin:auto;
+}
+
+.film-list .film-card {
+    display:grid;
+    grid-template-columns: 1fr 1fr 4fr;
+    gap:15px;
+}
+
+.film-list .film-card .poster img{
+    width:100%
+}
+
+.film-list .film-card .props {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    height: fit-content;
+}
+
+.film-list .film-card .props span {
+    margin:5px;
+}
+
+.film-list .film-card .props span:nth-child(even) {
+    text-align:left;
+}
+
+.film-list .film-card .props span:nth-child(odd) {
+    text-align:right;
+}
+
+.film-list .film-card .comment h3 {
+    margin:0 auto 20px;
+}

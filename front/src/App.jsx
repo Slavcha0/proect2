@@ -26,6 +26,10 @@ function App() {
       <Header curPath={currentPath}/>
 
       <Container curPath={currentPath}></Container>
+
+      <footer>
+        Вячеслав Кобецкой, ©2024
+      </footer>
     </div>
   );
 }
