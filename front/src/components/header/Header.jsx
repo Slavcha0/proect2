@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Logo from '../../images/logo3.png';
+import Logo from '../../images/kam.png';
 import './style.css';
 import Menu from '../menu/Menu';
 import lang from './lang.js';
