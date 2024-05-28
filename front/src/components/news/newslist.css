@@ -6,7 +6,8 @@
 .film-list .film-card {
     display:grid;
     grid-template-columns: 1fr 1fr 4fr;
-    gap:15px;
+    gap:10px;
+    
 }
 
 .film-list .film-card .poster img{
@@ -20,7 +21,9 @@
 }
 
 .film-list .film-card .props span {
-    margin:5px;
+    margin:30px;
+    
+    font-style: italic;
 }
 
 .film-list .film-card .props span:nth-child(even) {
@@ -33,5 +36,6 @@
 
 .film-list .film-card .comment h3 {
     margin:0 auto 20px;
+    
     
 }
